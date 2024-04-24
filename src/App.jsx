@@ -17,9 +17,10 @@ function App() {
     setBookMarks(newBookMarks)
   }
 
-  const handleReadingTime =(time)=>{
-    
+  const handleReadingTime =(id,time)=>{
     setReadingTime(readingTime+time)
+    const remaining = bookMarks.filter(bookMark=>bookMark.id !==id)
+    setBookMarks(remaining)
   }
 
   return (
