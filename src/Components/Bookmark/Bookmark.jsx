@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 
 const Bookmark = ({bookMark}) => {
-    console.log(bookMark)
+    
     const {title}=bookMark;
     return (
         <div className=''>
